@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Estudio independiente</title>
+    </head>
+    <body>
+            <header>
+        <!--Titulo Principal de la Página-->
+        <h1>Mechas Entertainment</h1>
+        <p>Conoce todos nuestros videojuegos</p>
+            </header>
+        <nav aria-label="Navegación Principal">
+            <ul> <!--Esta lista contiene el link de la página de cada videojuego de forma independiente-->
+                <li><a href="primer-videojuego">Primer videojuego</a></li>
+                <li><a href="segundo-videojuego">Segundo videojuego</a></li>
+                <li><a href="tercer-videojuego">Tercer videojuego</a></li>
+                <li><a href="cuarto-videojuego">Cuarto videojuego</a></li>
+            </ul>
+        </nav>
+    <!--Main contiene el contenido principal de la página-->
+        <main id = "Inicio">
+            <section aria-labelledby="titulo-presentacion">
+                <h2 id="titulo-presentacion">Conoce Nuestros Estudios</h2>
+                <img
+                src="img.jpg"
+                alt="Imagen-estudio"
+                width="800"
+                >
+                <p>Descripción de los estudios de la empresa, mision, vision, etc...</p>
+            </section>
+            <!--Sección de contacto para el estudio-->
+            <section id="contacto" aria-labelledby="titulo-contacto">
+                <h2 id="titulo-contacto">Contáctanos</h2>
+                <form>
+                    <div>
+                        <label for="nombre">Nombre Completo:</label>
+                        <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        required 
+                        >
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="correo">Correo Electrónico</label>
+                        <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        required
+                        >
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="numero-contacto">Número de Contacto</label>
+                        <input
+                        type="tel"
+                        id="numero-contacto"
+                        name="numero-contacto"
+                        required
+                        >
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="mensaje">Mensaje a dar</label>
+                        <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        required
+                        ></textarea>
+                    </div>
+
+                    <br>
+                    <button type="submit" aria-label="Enviar información de contacto">
+                        Enviar información
+                    </button>
+                </form>
+            </section>
+        </main>
+        <!--Información al final de la página-->
+        <footer>
+            <p>&copy; 2026 Mechas Entertainment. Página creada por Juan David Bustos Mora </p>
+        </footer>
+    </body>
+</html>
